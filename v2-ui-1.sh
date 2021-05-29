@@ -1,5 +1,4 @@
 #!/bin/bash
-cd /root/
 wget https://github.com/2362400196/shell/raw/main/v2-ui-linux.tar.gz
 mv v2-ui-linux.tar.gz /usr/local/
 cd /usr/local/
