@@ -6,7 +6,7 @@ cd /usr/local/
 tar zxvf v2-ui-linux.tar.gz
 rm v2-ui-linux.tar.gz -f
 cd v2-ui
-chmod +x v2-ui bin/xray-v2-ui
+chmod +x v2-ui bin
 cp -f v2-ui.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable v2-ui
