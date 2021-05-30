@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "1.模板1"
 echo "2.模板2"
 read -p "请选择：" mb
