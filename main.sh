@@ -11,6 +11,7 @@ if [ $input1 == '1' ]; then
     wget https://raw.githubusercontent.com/2362400196/shell/main/bt.sh
     chmod a+x bt.sh
     ./bt.sh
+    
 elif [ $input1 == '2' ]; then
     echo "1.kangle脚本合集"
     echo "2.kangle模板合集"
