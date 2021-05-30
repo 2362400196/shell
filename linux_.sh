@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "服务器环境配置"
 echo "1.安装python3"
 echo "2.安装go环境"
