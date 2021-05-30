@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "一键安装网站"
 echo "1.漂亮的发卡网"
-echo "2.网站2"
+echo "2.cloudreve网盘"
 read -p "请选择：" wz
 #发卡网
 if [ $wz == '1' ]; then
@@ -24,6 +24,7 @@ if [ $wz == '1' ]; then
     tar -zxvf card_release.tar.gz
     cd card_system_free_dist
     mv * ../
+    cd ..
     cd ..
     echo "---------------------------"
     echo "开始配置数据库信息"
