@@ -8,13 +8,14 @@
 
 使用方法
 
+第一种方法
 1.<span style="color: #ff0000;"><strong>直接在你服务器中执行以下命令即可(需要注意的是服务器系统需要CentOS 7.x系统)</strong></span>
 
 <pre><code class="gl" data-enlighter-language="shell">
 yum -y install wget;wget https://raw.githubusercontent.com/2362400196/shell/main/main.sh -O main.sh &amp;&amp; sh main.sh</code></pre>
 &nbsp;
 
-2.<span style="color: #ff0000;"><strong>手动执行</strong></span>
+2.<span style="color: #ff0000;"><strong>第二种方法，手动执行</strong></span>
 
 下载所有文件
 
