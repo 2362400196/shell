@@ -18,6 +18,7 @@ if [ $wz == '1' ]; then
 
     read -p "你的域名（网站目录名）：" path
     cd ..
+    cd ..
     cd www/wwwroot/$path
     wget https://github.com/Tai7sy/card-system/releases/download/3.0/card_release.tar.gz
     tar -zxvf card_release.tar.gz
