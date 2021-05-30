@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "一键安装网站"
 echo "1.漂亮的发卡网"
 echo "2.cloudreve网盘"
