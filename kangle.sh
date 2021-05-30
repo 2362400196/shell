@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "1.彩虹kangle"
 echo "2.其他kange"
 read -p "请选择：" kl
