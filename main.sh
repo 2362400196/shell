@@ -20,20 +20,22 @@ elif [ $input1 == '2' ]; then
     echo "2.kangle模板合集"
     read -p "请选择：" jb
     if [ $jb == '1' ]; then
-    wget https://raw.githubusercontent.com/2362400196/shell/main/kangle.sh
+        wget https://raw.githubusercontent.com/2362400196/shell/main/kangle.sh
         chmod a+x kangle.sh
         ./kangle.sh
     elif [ $jb == '2' ]; then
-    wget https://raw.githubusercontent.com/2362400196/shell/main/kanglemoban.sh
+        wget https://raw.githubusercontent.com/2362400196/shell/main/kanglemoban.sh
         chmod a+x kanglemoban.sh
         ./kanglemoban.sh
     fi
 #安装网站
 elif [ $input1 == '3' ]; then
+    wget https://raw.githubusercontent.com/2362400196/shell/main/webinstall.sh
     chmod a+x webinstall.sh
     ./webinstall.sh
 #服务器环境配置
 elif [ $input1 == '4' ]; then
+    wget https://raw.githubusercontent.com/2362400196/shell/main/linux_.sh
     chmod a+x linux_.sh
     ./linux_.sh
 #开发中
