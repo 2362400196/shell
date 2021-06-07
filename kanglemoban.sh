@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "1.模板1"
+echo "1.简洁大气一号模板。演示https://cdn.jsdelivr.net/gh/2362400196/zhu/750b56bf6055a94826d0317390d49b0b.png"
 echo "2.模板2"
 read -p "请选择：" mb
 if [ $mb == '1' ]; then
