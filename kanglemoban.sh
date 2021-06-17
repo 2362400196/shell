@@ -6,8 +6,8 @@ read -p "请选择：" mb
 if [ $mb == '1' ]; then
     echo "模板1"
     cd /vhs/kangle/nodewww/webftp/vhost/view/
-    wget -q https://raw.githubusercontent.com/2362400196/shell/main/模板2.gz
-    tar -zxvf 模板2.gz
+    wget -q https://raw.githubusercontent.com/2362400196/shell/main/模板2.tar.gz
+    tar -zxvf 模板2.tar.gz
     echo "完成，去kangle后台切换模板为default2，并清理模板缓存"
     chmod a+x kanglemoban.sh
     ./kanglemoban.sh
