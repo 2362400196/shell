@@ -12,11 +12,13 @@ echo "5.更多功能"
 read -p "请选择：" input1
 #安装宝塔
 if [ $input1 == '1' ]; then
+    clear
     wget https://raw.githubusercontent.com/2362400196/shell/main/bt.sh
     chmod a+x bt.sh
     ./bt.sh
 #安装kangle
 elif [ $input1 == '2' ]; then
+    clear
     echo "1.kangle脚本合集"
     echo "2.kangle模板合集"
     read -p "请选择：" jb
@@ -31,16 +33,19 @@ elif [ $input1 == '2' ]; then
     fi
 #安装网站
 elif [ $input1 == '3' ]; then
+    clear
     wget https://raw.githubusercontent.com/2362400196/shell/main/webinstall.sh
     chmod a+x webinstall.sh
     ./webinstall.sh
 #服务器环境配置
 elif [ $input1 == '4' ]; then
+    clear
     wget https://raw.githubusercontent.com/2362400196/shell/main/linux_.sh
     chmod a+x linux_.sh
     ./linux_.sh
 #开发中
 elif [ $input1 == '5' ]; then
+    clear
     echo "开发中"
 else
     echo "没有符合的条件"
