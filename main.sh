@@ -21,6 +21,7 @@ elif [ $input1 == '2' ]; then
     clear
     echo "1.kangle脚本合集"
     echo "2.kangle模板合集"
+    echo "3.kangle自动备份至腾讯云对象存储"
     read -p "请选择：" jb
     if [ $jb == '1' ]; then
         wget https://raw.githubusercontent.com/2362400196/shell/main/kangle.sh
@@ -30,6 +31,10 @@ elif [ $input1 == '2' ]; then
         wget https://raw.githubusercontent.com/2362400196/shell/main/kanglemoban.sh
         chmod a+x kanglemoban.sh
         ./kanglemoban.sh
+    elif [ $jb == '3' ]; then
+        wget https://raw.githubusercontent.com/2362400196/shell/main/bfkangle.sh
+        chmod a+x bfkangle.sh
+        ./bfkangle.sh
     fi
 #安装网站
 elif [ $input1 == '3' ]; then
