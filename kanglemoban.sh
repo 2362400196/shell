@@ -9,9 +9,8 @@ if [ $mb == '1' ]; then
     rm -rf /vhs/kangle/nodewww/webftp/vhost/view/default/*
     wget -q https://github.com/2362400196/shell/raw/main/ep.zip
     unzip ep.zip
-    echo "完成，去kangle后台清理模板缓存"
-    chmod a+x kanglemoban.sh
-    ./kanglemoban.sh
+    clear
+    echo -e "\033[31m 完成，去kangle后台清理模板缓存 \033[0m" 
 elif [ $kl == '2' ]; then
     echo "模板2"
 fi
