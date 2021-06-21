@@ -27,7 +27,7 @@ def kangle():
     os.system(bf)
 def oss():
     cf = configparser.SafeConfigParser()
-    cf.read("E:/编程学习/shell\config.ini")
+    cf.read("/root/config.ini")
     
     secretId = cf.get("kangle", "secretId")
     secretKey = cf.get("kangle", "secretKey")
@@ -51,3 +51,4 @@ def oss():
 
 
 kangle()
+oss()
