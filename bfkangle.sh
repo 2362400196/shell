@@ -24,15 +24,14 @@ if [ ! -f "$file" ]; then
         secretKey = $secretKey
         Region = $Region
         Bucket = $Bucket
-
         " >config.ini
 fi
 
 echo "检测到您已经配置好了对象存储，现在开始直接备份"
-cd /
-wget -q https://github.com/2362400196/shell/raw/main/kangle.pyc -O kangle.py
-chmod a+x kangle.pyc
-python3 kangle.pyc
+cd /backup
+wget -q https://github.com/2362400196/shell/raw/main/kangle.py
+chmod a+x kangle.py
+python3 /backup/kangle.py
 crontab -r
 echo "59 23 * * * /bf.sh >>bf.log" >>/var/spool/cron/root
 echo "已经设置了每天24点准时备份"
