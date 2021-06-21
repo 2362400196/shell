@@ -5,8 +5,9 @@ import requests
 import re
 import os
 def kangle():
+    os.system('cd /backup')
     cf = configparser.SafeConfigParser()
-    cf.read("/root/config.ini")
+    cf.read("/backup/config.ini")
     ip=cf.get("kangle", "ip")
     username = cf.get("kangle", "kanglename")
     pwd = cf.get("kangle", "kanglepwd")
@@ -26,9 +27,9 @@ def kangle():
     print(bf)
     os.system(bf)
 def oss():
+    os.system('cd /backup')
     cf = configparser.SafeConfigParser()
-    cf.read("/root/config.ini")
-    
+    cf.read("/backup/config.ini")
     secretId = cf.get("kangle", "secretId")
     secretKey = cf.get("kangle", "secretKey")
     Region = cf.get("kangle", "Region")
@@ -36,13 +37,13 @@ def oss():
     secret_id = secretId  # 替换为用户的 secretId
     secret_key = secretKey  # 替换为用户的 secretKey
     region = Region  # 替换为用户的 地区
-    #os.system('tar czvf /backup/青柠自动备份.tar.gz *')
+    os.system('tar czvf /backup/青柠自动备份.tar.gz *')
     config = CosConfig(Region=region, SecretId=secret_id, SecretKey=secret_key)
     client = CosS3Client(config)
     response = client.upload_file(
         Bucket=Bucket,#存储桶名称
-        LocalFilePath='/backup',  # 本地文件的路径
-        Key='backup',  # 上传到桶之后的文件名
+        LocalFilePath='/backup/青柠自动备份.tar.gz',  # 本地文件的路径
+        Key='青柠自动备份.tar.gz',  # 上传到桶之后的文件名
         
     )
     print(response['ETag'])
