@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "配置很简单，但是你需要看一些说明，不然肯定会出错，请浏览器访问网址：https://qn.qingningz.cn/index.php/archives/46/"
+read -p "看完说明后请回车："
 file="/backup/config.ini"
 if [ ! -f "$file" ]; then
     cd /
