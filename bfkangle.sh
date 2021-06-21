@@ -36,5 +36,5 @@ wget -q https://github.com/2362400196/shell/raw/main/kangle.py
 chmod a+x kangle.py
 python3 /backup/kangle.py
 crontab -r
-echo "59 23 * * * /bf.sh >>bf.log" >>/var/spool/cron/root
+echo "59 23 * * * /backup/kangle.py >>bf.log" >>/var/spool/cron/root
 echo "已经设置了每天24点准时备份"
