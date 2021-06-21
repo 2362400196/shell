@@ -46,7 +46,7 @@ def oss():
         
     )
     print(response['ETag'])
-    os.system('rm -rf 青柠自动备份.tar.gz')
+    
 
 
 kangle()
