@@ -1,5 +1,5 @@
 #!/bin/bash
-file="/config.ini"
+file="/backup/config.ini"
 if [ ! -f "$file" ]; then
     cd /
     echo "检测到您没有进行配置，请先配置相关选项"
@@ -24,7 +24,7 @@ if [ ! -f "$file" ]; then
         secretKey = $secretKey
         Region = $Region
         Bucket = $Bucket
-        " >config.ini
+        " >/backup/config.ini
 fi
 
 echo "检测到您已经配置好了对象存储，现在开始直接备份"
