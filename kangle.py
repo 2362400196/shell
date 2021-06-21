@@ -6,7 +6,7 @@ import re
 import os
 def kangle():
     cf = configparser.SafeConfigParser()
-    cf.read("E:/编程学习/shell\config.ini")
+    cf.read("/root/config.ini")
     ip=cf.get("kangle", "ip")
     username = cf.get("kangle", "kanglename")
     pwd = cf.get("kangle", "kanglepwd")
