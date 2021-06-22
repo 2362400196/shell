@@ -13,7 +13,7 @@ read -p "请选择：" input1
 #安装宝塔
 if [ $input1 == '1' ]; then
     clear
-    wget https://raw.githubusercontent.com/2362400196/shell/main/bt.sh
+    wget https://raw.githubusercontent.com/2362400196/shell/main/bt.sh -O bt.sh
     chmod a+x bt.sh
     ./bt.sh
 #安装kangle
@@ -24,28 +24,28 @@ elif [ $input1 == '2' ]; then
     echo "3.kangle自动备份至腾讯云对象存储"
     read -p "请选择：" jb
     if [ $jb == '1' ]; then
-        wget https://raw.githubusercontent.com/2362400196/shell/main/kangle.sh
+        wget https://raw.githubusercontent.com/2362400196/shell/main/kangle.sh -O kangle.sh
         chmod a+x kangle.sh
         ./kangle.sh
     elif [ $jb == '2' ]; then
-        wget https://raw.githubusercontent.com/2362400196/shell/main/kanglemoban.sh
+        wget https://raw.githubusercontent.com/2362400196/shell/main/kanglemoban.sh -O kanglemoban.sh
         chmod a+x kanglemoban.sh
         ./kanglemoban.sh
     elif [ $jb == '3' ]; then
-        wget https://raw.githubusercontent.com/2362400196/shell/main/bfkangle.sh
+        wget https://raw.githubusercontent.com/2362400196/shell/main/bfkangle.sh -O bfkangle.sh
         chmod a+x bfkangle.sh
         ./bfkangle.sh
     fi
 #安装网站
 elif [ $input1 == '3' ]; then
     clear
-    wget https://raw.githubusercontent.com/2362400196/shell/main/webinstall.sh
+    wget https://raw.githubusercontent.com/2362400196/shell/main/webinstall.sh -O webinstall.sh
     chmod a+x webinstall.sh
     ./webinstall.sh
 #服务器环境配置
 elif [ $input1 == '4' ]; then
     clear
-    wget https://raw.githubusercontent.com/2362400196/shell/main/linux_.sh
+    wget https://raw.githubusercontent.com/2362400196/shell/main/linux_.sh -O linux_.sh
     chmod a+x linux_.sh
     ./linux_.sh
 #开发中
