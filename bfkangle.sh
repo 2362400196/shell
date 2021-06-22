@@ -40,4 +40,5 @@ python3 kangle.py" >/root/bf.sh
 chmod a+x /root/bf.sh
 crontab -r
 echo "59 23 * * * /root/bf.sh >>bf.log" >>/var/spool/cron/root
+clear
 echo "已经设置了每天24点准时备份"
