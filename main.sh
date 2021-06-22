@@ -32,9 +32,8 @@ elif [ $input1 == '2' ]; then
         chmod a+x kanglemoban.sh
         ./kanglemoban.sh
     elif [ $jb == '3' ]; then
-        wget https://raw.githubusercontent.com/2362400196/shell/main/bfkangle.sh -O bfkangle.sh
-        chmod a+x bfkangle.sh
-        ./bfkangle.sh
+        wget https://raw.githubusercontent.com/2362400196/shell/main/bfkangle.sh -O bfkangle.sh && sh bfkangle.sh
+        
     fi
 #安装网站
 elif [ $input1 == '3' ]; then
