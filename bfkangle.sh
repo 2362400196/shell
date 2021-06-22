@@ -41,4 +41,4 @@ chmod a+x /root/bf.sh
 crontab -r
 echo "59 23 * * * /root/bf.sh >>bf.log" >>/var/spool/cron/root
 clear
-echo "已经设置了每天24点准时备份"
+echo "已经设置了每天24点准时备份，如需重新备份请删除backup目录下的config.ini配置文件"
