@@ -82,8 +82,8 @@ elif [ $wz == '2' ]; then
     if [ $wp_1 = "1" ]; then
         echo "网盘开始安装"
         cd qingning
-        wget https://github.91chifun.workers.dev/https://github.com//cloudreve/Cloudreve/releases/download/3.3.1/cloudreve_3.3.1_linux_amd64.tar.gz
-        tar -zxvf cloudreve_3.3.1_linux_amd64.tar.gz
+        wget https://github.com/cloudreve/Cloudreve/releases/download/3.3.2/cloudreve_3.3.2_linux_amd64.tar.gz
+        tar -zxvf cloudreve_3.3.2_linux_amd64.tar.gz
         chmod +x ./cloudreve
         ./cloudreve
         read -p "安装完成，重新执行./webinstall.sh,选择进程守护"
