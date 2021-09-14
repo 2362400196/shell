@@ -81,6 +81,7 @@ elif [ $wz == '2' ]; then
     read -p "请选择：" wp_1
     if [ $wp_1 = "1" ]; then
         echo "网盘开始安装"
+        cd qingning
         wget https://github.91chifun.workers.dev/https://github.com//cloudreve/Cloudreve/releases/download/3.3.1/cloudreve_3.3.1_linux_amd64.tar.gz
         tar -zxvf cloudreve_3.3.1_linux_amd64.tar.gz
         chmod +x ./cloudreve
