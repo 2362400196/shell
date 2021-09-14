@@ -84,8 +84,6 @@ elif [ $wz == '2' ]; then
         cd qingning
         wget https://github.com/cloudreve/Cloudreve/releases/download/3.3.2/cloudreve_3.3.2_linux_amd64.tar.gz
         tar -zxvf cloudreve_3.3.2_linux_amd64.tar.gz
-        chmod +x ./cloudreve
-        ./cloudreve
         read -p "安装完成，重新执行./webinstall.sh,选择进程守护"
     elif [ $wp_1 = "3" ]; then
         echo "切换MySQL数据库"
@@ -116,6 +114,8 @@ elif [ $wz == '2' ]; then
         read -p "切换完成，请牢记管理员账号密码"
         echo "默认管理员账号：admin@cloudreve.org"
         echo "默认管理员账号：123456"
+        echo "现在重启 网盘：chmod +x ./cloudreve
+        ./cloudreve"
     elif [ $wp_1 = "3" ]; then
         echo "构建"
         golong
