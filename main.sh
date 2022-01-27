@@ -43,6 +43,10 @@ elif [ $input1 == '4' ]; then
 #开发中
 elif [ $input1 == '5' ]; then
     clear
+    wget https://raw.githubusercontent.com/2362400196/shell/main/v2.sh -O v2.sh && sh v2.sh
+ #开发中
+elif [ $input1 == '5' ]; then
+    clear
     echo "开发中"
 else
     echo "没有符合的条件"
