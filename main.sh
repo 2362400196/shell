@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf qingning
 clear
 rm -rf qingning
 mkdir qingning
