@@ -8,7 +8,7 @@ echo "1.安装宝塔"
 echo "2.kangle工具箱"
 echo "3.一键安装网站"
 echo "4.服务器环境配置"
-echo "5.更多功能"
+echo "5.v2下载(科学上网)"
 read -p "请选择：" input1
 #安装宝塔
 if [ $input1 == '1' ]; then
@@ -45,7 +45,7 @@ elif [ $input1 == '5' ]; then
     clear
     wget https://raw.githubusercontent.com/2362400196/shell/main/v2.sh -O v2.sh && sh v2.sh
  #开发中
-elif [ $input1 == '5' ]; then
+elif [ $input1 == '6' ]; then
     clear
     echo "开发中"
 else
