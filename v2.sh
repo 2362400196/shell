@@ -14,7 +14,7 @@ systemctl enable x-ui
 systemctl restart x-ui
 clear
 echo "安装完成！"
-echo "下载地址：https://zhuxiaohuan-1252924679.cos.ap-nanjing.myqcloud.com/shell/v2rayN-Core.zip"
+echo "windows下载地址：https://zhuxiaohuan-1252924679.cos.ap-nanjing.myqcloud.com/shell/v2rayN-Core.zip"
 echo -e "\033[31m 后台访问地址：你的ip+:54321 \033[0m"
 echo -e "\033[31m 后台访问地址：账号密码都是admin，如果进不去后台请开端口 \033[0m"
 echo -e "\033[31m 开端口方法：开端口：firewall-cmd --add-port=端口/tcp --permanent
